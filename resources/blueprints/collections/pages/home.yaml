@@ -47,6 +47,14 @@ tabs:
               container: default
               type: assets
               display: 'Header image'
+              listable: false
+              sortable: false
+              replicator_preview: false
+              duplicate: false
+              max_files: 1
+              min_files: 1
+              validate:
+                - required
           -
             handle: blocks
             field:

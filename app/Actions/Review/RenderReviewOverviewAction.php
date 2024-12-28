@@ -14,13 +14,14 @@ class RenderReviewOverviewAction extends TemplateResolver
     public function execute(Entry $page): JsonResponse
     {
         $headerItems = [
-            'headerImage' => asset('storage/'.$page->value('header_image')[0]),
+            'headerImage' => asset('storage/' . $page->value('header_image')),
             'headerTitle' => $page->value('header_title'),
         ];
 
         $reviewCollection = Collection::find('reviews');
         $reviewItems = $reviewCollection
             ->queryEntries()
+            ->orderBy('order')
             ->get()
             ->map(function ($review) {
                 $reviewable = $review['reviewable'];

@@ -1,4 +1,6 @@
 title: Reviews
+template: default
+layout: layout
 mount: 8a254262-90b1-4eb7-918a-e7d60d81a683
 revisions: false
 sort_dir: asc
@@ -11,3 +13,5 @@ preview_targets:
     label: Entry
     url: '{permalink}'
     refresh: true
+structure:
+  root: false
