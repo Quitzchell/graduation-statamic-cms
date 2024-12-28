@@ -10,7 +10,8 @@
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
-        "statamic/cms": "^5.45"
+        "statamic/cms": "^5.45",
+        "statamic/eloquent-driver": "^4.19"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
