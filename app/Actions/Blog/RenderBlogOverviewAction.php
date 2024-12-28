@@ -13,7 +13,7 @@ class RenderBlogOverviewAction extends TemplateResolver
     public function execute(Entry $page): JsonResponse
     {
         $headerItems = [
-            'headerImage' => asset('storage/'.$page->value('header_image')[0]),
+            'headerImage' => asset('storage/'.$page->value('header_image')),
             'headerTitle' => $page->get('header_title'),
         ];
 
