@@ -47,6 +47,14 @@ tabs:
               container: default
               type: assets
               display: 'Header image'
+              listable: false
+              sortable: false
+              replicator_preview: false
+              duplicate: false
+              max_files: 1
+              min_files: 1
+              validate:
+                - required
           -
             handle: blocks
             field:
@@ -77,17 +85,4 @@ tabs:
                       fields:
                         -
                           import: common.call_to_action
-  sidebar:
-    sections:
-      -
-        fields:
-          -
-            handle: parent
-            field:
-              type: entries
-              collections:
-                - pages
-              max_items: 1
-              listable: false
-              localizable: true
 title: Blog
